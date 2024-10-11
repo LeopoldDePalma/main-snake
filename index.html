@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" type="image/x-icon" href="./img/icon-game.png" />
+    <script src="snake.js" defer></script>
+    <title>Snake</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="score">
+        <span>Score: <span class="score-val">0</span></span>
+      </div>
+      <div class="play-board"></div>
+      <div class="btns">
+        <button onclick="changeDirection(this)" class="ArrowLeft" type="button">
+          <i class="fa-solid fa-arrow-left-long"></i>
+        </button>
+        <button onclick="changeDirection(this)" class="ArrowUp" type="button">
+          <i class="fa-solid fa-arrow-up-long"></i>
+        </button>
+        <button onclick="changeDirection(this)" class="ArrowDown" type="button">
+          <i class="fa-solid fa-arrow-down-long"></i>
+        </button>
+        <button
+          onclick="changeDirection(this)"
+          class="ArrowRight"
+          type="button"
+        >
+          <i class="fa-solid fa-arrow-right-long"></i>
+        </button>
+      </div>
+      <div class="game-over-box">
+        <h1>Game Over</h1>
+        <p>Your score is: <span class="score-over-score">0</span> &#128293;</p>
+        <button class="restart-btn" type="button">
+          <i class="fa-solid fa-rotate"></i>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
