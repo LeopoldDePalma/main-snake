@@ -85,3 +85,17 @@ restartBtn.addEventListener("click", () => {
 changeFoodPosition();
 IntervalId = setInterval(createGame, 100);
 createGame();
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "a" || event.keyCode === 37) {
+    changeDirection(document.querySelector(".ArrowLeft"));
+  } else if (event.key === "w" || event.keyCode === 38) {
+    changeDirection(document.querySelector(".ArrowUp"));
+  } else if (event.key === "s" || event.keyCode === 40) {
+    changeDirection(document.querySelector(".ArrowDown"));
+  } else if (event.key === "d" || event.keyCode === 39) {
+    changeDirection(document.querySelector(".ArrowRight"));
+  } else if (event.keyCode === 13) {
+    restartBtn.click();
+  }
+});
